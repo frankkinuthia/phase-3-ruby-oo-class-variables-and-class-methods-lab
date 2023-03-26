@@ -58,3 +58,15 @@ class Song
     end
 end
   
+
+Song.new("99 Problems", "Jay-Z", "Rap")
+Song.new("Crazy in Love", "Beyonce", "Pop")
+Song.new("Hotline Bling", "Drake", "Rap")
+Song.new("Love on Top", "Beyonce", "Pop")
+Song.new("Empire State of Mind", "Jay-Z", "Rap")
+
+puts Song.count        # => 5
+puts Song.artists      # => ["Jay-Z", "Beyonce", "Drake"]
+puts Song.genres       # => ["Rap", "Pop"]
+puts Song.genre_count  # => {"Rap"=>3, "Pop"=>2}
+puts Song.artist_count # => {"Jay-Z"=>2, "Beyonce"=>2, "Drake"=>1}
